@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Quiz</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Audio Quiz</h1>
+  </header>
+
+    <div id="start-container">
+        <p>Click the button to start the quiz!</p>
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quiz-container">
+
+      <div id="question-container">
+      </div>
+      <div id="options-container"></div>
+      <button class="next-question" onclick="nextQuestion()">Next Question</button>
+    </div>
+
+<div id="summary"></div>
+
+</body>
+<script src="quiz.js"></script>
+</html>

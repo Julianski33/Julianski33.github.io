@@ -66,9 +66,8 @@
 
     function loadQuestion() {
         const question = questions[currentQuestionIndex];
-        // questionContainer.textContent = question.question;
 
-        const audioElement = document.getElementById("question-container");
+        /*const audioElement = document.getElementById("question-container");
         let musicPLayer = `
                           <div> ${question.question} </div>
                           <audio controls>
@@ -76,7 +75,14 @@
                           Your browser does not support the audio element.
                           </audio>
                           `
-        audioElement.innerHTML = musicPLayer;
+        audioElement.innerHTML = musicPLayer;*/
+
+    document.getElementById("question-text").textContent = question.question;
+
+    // Set the audio source dynamically
+    const audioElement = document.getElementById("question-audio");
+    audioElement.src = question.audio;
+    audioElement.load();
 
 
         optionsContainer.innerHTML = "";

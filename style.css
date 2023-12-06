@@ -7,35 +7,40 @@ body {
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: #f2f2f2;
+            background-color: #288ac4;
         }
 
         #quiz-container {
            display: none;
+           margin: 70px;
             width: 80%;
-            max-width: 500px;
-            background-color: #fff;
+            max-width: 600px;
+            background-color: #63b4dc;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             padding: 20px;
             box-sizing: border-box;
             text-align: center;
         }
+        #start-container {
+          color: #fff;
 
+        }
         #question-container {
             margin-bottom: 20px;
-            font-size: 18px;
+            font-size: 30px;
+            color: #01265e;
         }
 
         button {
             display: block;
             width: 100%;
-            padding: 15px;
+            padding: 20px;
             margin: 10px 0;
-            font-size: 16px;
+            font-size: 20px;
             border: none;
             border-radius: 5px;
-            background: linear-gradient(to bottom, #3498db, #2980b9);
+            background: linear-gradient(to bottom, #075589, #2980b9);
             color: #fff;
             cursor: pointer;
             transition: background 0.3s ease, transform 0.1s ease;
@@ -55,20 +60,24 @@ body {
         }
 
         button.next-question {
-                    background: linear-gradient(to bottom, #e91e63, #c2185b); /* Pink color gradient */
-                    color: #fff; /* Text color */
+                    background: linear-gradient(to bottom, #d2d564, #c2185b);
+                    color: #fff;
                 }
 
         #summary {
             margin-top: 20px;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
-            color: #333;
+            color: #fff;
         }
         header h1 {
-                    font-size: 36px;
-                    color: #333;
+                    font-size: 50px;
+                    color: #fff;
                     margin-bottom: 10px;
                     text-align: center;
                 }
-#question-audio
+        audio {
+          width: 100%;
+          max-width: 500px;
+          margin: 20px 0;
+         }

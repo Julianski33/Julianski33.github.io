@@ -1,18 +1,50 @@
     var questions = [
         {
-            question: "What is the capital of France?",
-            audio:"music/Hunt.mp3",
-            options: ["Paris", "Berlin", "London", "Madrid"],
+            question: "An easy one. What Videogame is this Audio from?",
+            audio:"music/Mario.mp3",
+            options: ["Super Mario Bros.", "Kirby", "Legends of Zelda", "Sonic the Hedgehog"],
             correctAnswer: 0,
         },
         {
-            question: "Which planet is known as the Red Planet?",
-            options: ["Earth", "Mars", "Jupiter", "Venus"],
+            question: "You should know this one too. A classic.",
+            audio:"music/Pokemon.mp3",
+            options: ["Metroid Prime", "Mariokart", "Pokémon", "Super Smash Bros"],
+            correctAnswer: 2,
+        },
+        {
+            question: "What about this one?",
+            audio:"music/KH.mp3",
+            options: ["Kingdom Hearts", "Final Fantasy", "World of Warcraft", "DOOM"],
+            correctAnswer: 0,
+        },
+        {
+            question: "Now this is a personal favourite!",
+            audio:"music/Skyrim.mp3",
+            options: ["Kingdom Come: Deliverance", "The Witcher 3: Wild Hunt", "Fallout 4", "The Elder Scrolls V: Skyrim"],
+            correctAnswer: 3,
+        },
+        {
+            question: "You are a nerd if you know this one.",
+            audio:"music/Halo.mp3",
+            options: ["Starcraft", "Halo", "Mass Effect", "Starfield"],
             correctAnswer: 1,
         },
         {
-            question: "What is the largest mammal in the world?",
-            options: ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+            question: "No shame if you have to guess. You should try out this game tho.",
+            audio:"music/Hunt.mp3",
+            options: ["Red Dead Redemption", "Red Dead Revolver", "Desperados Series", "Hunt Showdown"],
+            correctAnswer: 3,
+        },
+        {
+            question: "Oh the memories...",
+            audio:"music/GTA.mp3",
+            options: ["GTA Vice City", "GTA San Andreas", "GTA IV", "GTA V"],
+            correctAnswer: 1,
+        },
+        {
+            question: "Last one!",
+            audio:"music/Nate.mp3",
+            options: ["Borderland 3", "Uncharted", "The Last of Us 2", "Assassin's Creed Valhalla"],
             correctAnswer: 1,
         },
     ];
@@ -34,11 +66,12 @@
 
     function loadQuestion() {
         const question = questions[currentQuestionIndex];
-        questionContainer.textContent = question.question;
+        // questionContainer.textContent = question.question;
 
         const audioElement = document.getElementById("question-container");
         let musicPLayer = `
-                          <audio controls autoplay>
+                          <div> ${question.question} </div>
+                          <audio controls>
                             <source src=${question.audio} type="audio/mpeg">
                           Your browser does not support the audio element.
                           </audio>

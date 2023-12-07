@@ -1,4 +1,4 @@
-body {
+        body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
@@ -11,8 +11,8 @@ body {
         }
 
         #quiz-container {
-           display: none;
-           margin: 70px;
+            display: none;
+            margin: 70px;
             width: 80%;
             max-width: 600px;
             background-color: #63b4dc;
@@ -23,7 +23,7 @@ body {
             text-align: center;
         }
         #start-container {
-          color: #fff;
+            color: #fff;
 
         }
         #question-container {
@@ -60,9 +60,9 @@ body {
         }
 
         button.next-question {
-                    background: linear-gradient(to bottom, #d2d564, #c2185b);
-                    color: #fff;
-                }
+            background: linear-gradient(to bottom, #d2d564, #c2185b);
+            color: #fff;
+        }
 
         #summary {
             margin-top: 20px;
@@ -71,13 +71,23 @@ body {
             color: #fff;
         }
         header h1 {
-                    font-size: 50px;
-                    color: #fff;
-                    margin-bottom: 10px;
-                    text-align: center;
-                }
+            font-size: 50px;
+            color: #fff;
+            margin-top: 100px;
+            text-align: center;
+        }
         audio {
-          width: 100%;
-          max-width: 500px;
-          margin: 20px 0;
+            width: 100%;
+            max-width: 500px;
+            margin: 20px 0;
+        }
+            @media only screen and (max-width: 600px) {
+            header h1 {
+            font-size: 30px; /* Adjust the font size for smaller screens */
+            margin-top: 10px
+        }
+
+        #quiz-container {
+            width: 90%; /* Adjust the width for smaller screens */
+            margin: 10px
          }

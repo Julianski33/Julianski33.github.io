@@ -2,32 +2,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Local Quiz</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Quiz</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>THE VIDEOGAME AUDIOQUIZ</h1>
   </header>
 
-    <div id="start-container">
-        <p>Click the button to start the quiz!</p>
-        <button onclick="startQuiz()">Start Quiz</button>
+  <div id="start-container">
+    <p>Click the button to start the quiz!</p>
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <div id="quiz-container">
+
+    <div id="question-container">
+      <p id="question-text"></p>
+
+      <audio id="question-audio" controls src=""></audio>
+
     </div>
+    <div id="options-container"></div>
 
-    <div id="quiz-container">
+    <button class="next-question" onclick="nextQuestion()">Next Question</button>
 
-      <div id="question-container">
-        <p id="question-text"></p>
-        <audio id="question-audio" controls src=""></audio>
-      </div>
-      <div id="options-container"></div>
-      <button class="next-question" onclick="nextQuestion()">Next Question</button>
-    </div>
+    <p id="score-counter">Current Score: 0</p>
+    
+  </div>
 
-<div id="summary"></div>
+  <div id="summary"></div>
 
 </body>
 <script src="quiz.js"></script>

@@ -1,4 +1,4 @@
-# IM5 Projekt - The Videogame Audioquiz
+# The Videogame Audioquiz
 #Projektbeschreibung
 Da es bei meinem Bachelorthema um das Audiodesign von Games geht, dachte ich mir ein kleines Quiz zum Thema zu erstellen.
 Das Quiz funktioniert mit Javascript und zeigt ob die Antwort richtig oder falsch war, den aktuellen Punktestand, sowie das finale Ergebnis.

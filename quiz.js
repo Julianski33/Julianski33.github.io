@@ -96,7 +96,6 @@ function checkAnswer(selectedIndex) {
     options[question.correctAnswer].classList.add("correct");
   }
 
-  // Disable further clicks on options
   for (let i = 0; i < options.length; i++) {
     options[i].disabled = true;
   }
